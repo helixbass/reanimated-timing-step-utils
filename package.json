@@ -1,0 +1,57 @@
+{
+  "name": "reanimated-timing-step-utils",
+  "version": "0.0.1-dev.1",
+  "description": "Utilities for timing-step animations with Reanimated",
+  "main": "lib/index.js",
+  "repository": "https://github.com/helixbass/reanimated-timing-step-utils",
+  "author": "Julian Rosse <@helixbass> <julian@helixbass.net> (http://helixbass.net/)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^26.0.20",
+    "@types/react": "^17.0.2",
+    "@types/react-native": "^0.63.50",
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1",
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "react": "^17.0.1",
+    "react-native": "^0.63.4",
+    "react-native-gesture-handler": "^1.10.3",
+    "react-native-reanimated": "^2.0.0",
+    "ts-jest": "^26.5.3",
+    "typescript": "^4.2.3"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "lint": "eslint 'src/**/*.ts'",
+    "test": "jest --config jestconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-native": ">=0.62.0",
+    "react-native-gesture-handler": "*",
+    "react-native-reanimated": ">=2.0.0-rc.3"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "types": "lib/index.d.ts",
+  "keywords": [
+    "react",
+    "react-native",
+    "reanimated",
+    "react-native-reanimated",
+    "animation"
+  ],
+  "homepage": "https://github.com/helixbass/reanimated-timing-step-utils",
+  "bugs": {
+    "url": "https://github.com/helixbass/reanimated-timing-step-utils/issues"
+  }
+}
