@@ -9,3 +9,4 @@ export {
   useHasTimingStepStarted,
   getHasTimingStepStarted,
 } from './useHasTimingStepStarted'
+export {TimingSteps, TimingStep} from './types'
