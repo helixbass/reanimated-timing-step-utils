@@ -1,15 +1,11 @@
-import {withTiming as withTimingBase, Easing} from 'react-native-reanimated'
-
-export const withTiming: typeof withTimingBase = (
-  toValue,
-  opts = {},
-  callback,
-) =>
-  withTimingBase(
-    toValue,
-    {
-      easing: Easing.linear,
-      ...opts,
-    },
-    callback,
-  )
+export {withTiming} from './withTiming'
+export {interpolateTimingStep} from './interpolateTimingStep'
+export {makeTimingSteps} from './makeTimingSteps'
+export {
+  useHasTimingStepFinished,
+  getHasTimingStepFinished,
+} from './useHasTimingStepFinished'
+export {
+  useHasTimingStepStarted,
+  getHasTimingStepStarted,
+} from './useHasTimingStepStarted'
